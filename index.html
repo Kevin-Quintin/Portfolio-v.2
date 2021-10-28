@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap v5.0.0 -->
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css'>
+
+  <!-- FontAwesome V5.15.4-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <!-- Feuille de style personnelle -->
+  <link rel="stylesheet" href="./src/style.css">
+
+
+  <title>PortFolio</title>
+</head>
+
+<body class="bg-light">
+  <!-- PREMIERE ETAPE LA BARRE DE NAVIGATION -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
+    <div class="container">
+      <div class="navbar-brand">Portfolio</div>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarText">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#presentation" class="nav-link">Présentation</a>
+          </li>
+          <li class="nav-item">
+            <a href="#competence" class="nav-link">Compétences professionnel</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projet" class="nav-link">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Expériences profesionnel</a>
+          </li>
+          <li class="nav-item">
+            <a href="#formation" class="nav-link">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Me contacter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DEUXIEME ETAPE - LA PARTIE PRESENTATION -->
+  <section id="presentation" class="container mt-5">
+    <h3 class="text-center">Présentation</h3>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img class="h-75 w-75 mt-4 rounded" src="./src/img/photo_profil_2.jpg" alt="photo_de_profil">
+      </div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header fw-bold">Kevin Quintin</div>
+          <div class="card-body">
+            <h5>Developpeur web junior</h5>
+            <h6 class="card-subtitle">Back-end PHP/Symfony</h6>
+            <p class="lead">Jeune développeur web suite à une reconversion professionnel, je m'enrichis chaque jours de
+              tout ce que le développement web peut m'apporter.</p>
+            <p class="lead">Après ma formation de Concepteur Développeur d'Application et de celle de Développeur Web et
+              Web Mobile, je continue de me former aux langages de programmation.</p>
+            <p class="lead">Après le javascript et Bootstrap je vais me tourner vers du React, Wordpress et consolider
+              mes acquis avec PHP et Symfony.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TROISIEME ETAPE - LES COMPETENCES PROFESSIONNEL -->
+  <section id="competence" class="container mt-5">
+    <h3 class="text-center">Compétences professionnel</h3>
+    <div class="table-responsive">
+      <table class="table table-striped table-sm table-light table-hover">
+        <thead>
+          <tr>
+            <th>Langage de codage</th>
+            <th>Cadre /système</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Bootstrap</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Visual Studio Code</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>Symfony</td>
+          </tr>
+          <tr>
+            <td>PHP</td>
+            <td>Code Igniter</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+            <td>Wordpress</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Teams</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Laragon</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Github</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>PhpMyAdmin</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>HeidySQL</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- QUATRIEME ETAPE - LES PROJETS -->
+  <section id="projet" class="container mt-5 bg-dark text-white p-3">
+    <h3 class="text-center">Projets</h3>
+    <!-- PARTIE BOOTSTRAP -->
+    <h4>Bootstrap</h4>
+    <div class="card-group text-dark">
+      <div class="card">
+        <img src="./src/img/logo_tinder.png" class="card-img-top" alt="logo_tinder">
+        <div class="card-body">
+          <h5 class="card-title text-decoration-underline">Clone de tinder</h5>
+          <p class="card-text">Ce site est une reproduction de ce qu'aurait pu être la fameuse application de rencontre.</p>
+          <p class="card-text">Si vous êtes célibataire, c'est le moment d'essayer.</p>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-outline-secondary w-100" href="./doc/projet_tinder/"> Voir</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./src/img/logo_tesla.png" class="card-img-top" alt="logo_tesla">
+        <div class="card-body">
+          <h5 class="card-title text-decoration-underline">Clone de tesla</h5>
+          <p class="card-text">Prêt à acheter vos voitures ou même vos fusées? Aller faire un tour sur cette
+            reproduction d'un site de Tesla.</p>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-outline-secondary w-100" href="./doc/projet_tesla/"> Voir</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./src/img/logo_harry_potter.png" class="card-img-top" alt="logo_harry_potter">
+        <div class="card-body">
+          <h5 class="card-title text-decoration-underline">Clone de harry potter</h5>
+          <p class="card-text">Le monde de la magie vous à toujours tenté? Ne perdez plus de temps et aller vous
+            inscrire sur la plateforme du magicien le plus magique de tous les temps (faite vite, les places sont
+            limitées).</p>
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-outline-secondary w-100" href="./doc/projet_harry_potter/"> Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PARTIE Javascript -->
+    <h4 class="mt-3">Javascript</h4>
+    <div class="card-group text-dark">
+      <!-- CALCULATRICE   -->
+      <div class="card">
+        <div class="card-header text-center fw-bold">Calculatrice</div>
+        <div class="card-body">
+          <p class="card-text">En appuyant sur le bouton "essayer" une fenêtre va s'ouvrir vous demandant quel type
+            d'opération vous souhaitez effectuer.</p>
+          <p class="card-texte">Ici vous pouvez additionner, soustraire, multiplier et diviser deux chiffres ou deux
+            nombres.</p>
+          <p class="card-texte">La fonction "diviser" prends en compte qu'il n'est pas possible de diviser par zéro.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary w-100" id="calculette">Essayer</button>
+        </div>
+      </div>
+      <!-- CITATIONS -->
+      <div class="card">
+        <div class="card-header text-center fw-bold">Citations</div>
+        <div class="card-body">
+          <div class="bg-light shadow p-5">
+            <div id="phrase" class="text-center">
+              La vie est un mystère qu'il faut vivre, et non un problème à résoudre.
+            </div>
+            <div class="bg-secondary w-25 mx-auto p-1 my-4"></div>
+            <div id="auteur" class="text-center">
+              Gandhi
+            </div>
+          </div>
+
+        </div>
+        <div class="card-footer">
+          <div id="nouveau" class="btn btn-outline-secondary w-100 mt-2 text-center">
+            Nouvelle citation
+          </div>
+        </div>
+      </div>
+      <!-- LE JUSTE PRIX -->
+      <div class="card">
+        <div class="card-header text-center fw-bold">Le juste prix</div>
+        <div class="card-body">
+          <p class="card-text">C'est une réplique du célèbre jeu du même nom.</p>
+          <p class="card-text">A chaque actualisation de la page un nouveau nombre est généré aléatoirement.</p>
+          <form id="formulaire" class="text-center">
+            <h6>Devinez le prix !</h6>
+            <p class="text-muted">(entre 0 et 1 000)</p>
+            <input id="prix" class="form-control" placeholder="" />
+            <small class="text-danger">Vous devez rentrer un nombre.</small>
+          </form>
+          <!-- Instructions -->
+          <div id="instructions" class="text-center w-100"></div>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary w-100" id="deviner">Deviner</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-group mt-1 text-dark">
+      <div class="card">
+        <!-- THEME SOMBRE -->
+        <div class="card-header text-center fw-bold">Thème sombre</div>
+        <div class="card-body">
+          <p class="card-text">Il s'agit d'une checkbox qu'il faut ou non activer.</p>
+          <p class="card-te">A chaque activation un écouteur d'événement va modifier le style de la page web.</p>
+          <p class="card-text">Passant du thème sombre au thème clair et inversement.</p>
+        </div>
+        <div class="card-footer text-center">
+          <div class="form-check form-switch">
+            <input type="checkbox" name="mode_sombre" class="form-check-input" id="mode_sombre_pour_switch">
+            <label for="mode_sombre_pour_switch" class="form-check-label" id="message">Mode clair</label>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <!-- FIGHT SIMULATOR -->
+        <div class="card-header text-center fw-bold">Fight simulator</div>
+        <div class="card-body">
+          <p class="card-text">Cette fonction met en place de la Programmation Orientée Objet.</p>
+          <p class="card-text">En appuyant sur "essayer" vous allez déclencher un combat titanesque entre Thor et
+            Gandalf.</p>
+          <p class="card-text">Si vous voulez voir le résultat de ce combat monstrueux il vous faut regarder la console
+            de votre navigateur (je ne voudrais pas heurter la sensibilité des plus jeunes <i
+              class="far fa-smile-wink"></i>)</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="btn btn-outline-secondary w-100" id="fight">Essayer</button>
+        </div>
+      </div>
+      <div class="card">
+        <!-- METEO -->
+        <div class="card-header text-center fw-bold">Météo</div>
+        <div class="card-body">
+
+          <!-- Ville / Temperature -->
+          <div class="text-center fw-bold">
+            <span id="ville">paris</span>
+
+            <div id="temperature">
+              <span id="temperature_label">
+                xx.x
+              </span> °C
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div id="changer" class="text-center btn btn-outline-secondary w-100">
+            Changer de ville
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CINQUIEME ETAPE - LES EXPERIENCES PROFESSIONNEL -->
+  <section id="experience" class="mt-5 container">
+    <h3 class="text-center">Expériences professionnel</h3>
+    <div class="table-responsive">
+      <table class="table table-striped table-sm table-light table-hover">
+        <thead>
+          <tr>
+            <th>Nom de l'entreprise</th>
+            <th>Année</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-bold">Pointderepère&Art-dhésif</td>
+            <td>2021</td>
+            <td>
+              <p class="text-muted">Stage (3 mois)</p>
+              <p>Au cours de ce stage j'ai été chargé de mettre en place la partie e-commerce du site. J'ai donc
+                travaillé sur la partie Inscription/Connexion/Ajout au panier le tout dans un premier temps en style
+                procédurale, puis en Programmation orientée Objet.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Kreyol&Co</td>
+            <td>2020</td>
+            <td>
+              <p class="text-muted">Stage (3 mois)</p>
+              <p>Au cours de ce stage ma mission était de créer le site internet d'une cheffe gastronomique. J'ai
+                utilisé Code Igniter pour mettre en place une réponse automatique des mails en cas de contact (pour
+                prévenir l'utilisateur que son mail à bien été envoyé). Une partie gestion des informations client (nom,
+                prénom) ainsi qu'une partie gestion des événements. La partie client et événement était relié via un
+                calendrier.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Trace Auto</td>
+            <td>2019</td>
+            <td>
+              <p class="text-muted">CDD (2 mois)</p>
+              <p>Avec la société Trace Auto mon travail consistais à conduire les véhicules d'un point A à un point B.
+                Je m'occupais plus particulièrement du secteur Grand Est.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Cité scolaire Delambre/Montaigne</td>
+            <td>2018</td>
+            <td>
+              <p class="text-muted">CDD(1 an)</p>
+              <p>J'occupais le poste d'Assistant d'éducation au lycée professionnel Montaigne. Mi-temps internat et
+                mi-temps externat. J'étais la liaison entre les élèves et le corps éducatif.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Lycée Les Jacobins</td>
+            <td>2013-2018</td>
+            <td>
+              <p class="text-muted">CDD (1 an renouvelable 5 fois)</p>
+              <p>J'occupais le poste d'Assistant d'éducation au lécée professionnel les Jacobins. En temps plein
+                externat. Ma mission consistais principalement à faire respecter le réglement intérieur de
+                l'établissement aux élèves.</p>
+              <p>Au cours de cette expérience j'ai été amené à mettre en place un "club de magie".</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Decathlon</td>
+            <td>2013</td>
+            <td>
+              <p class="text-muted">CDD(3 mois)</p>
+              <p>J'ai été affecté dans l'univers Montagne, au cours de celui-ci j'ai pu mettre en pratique la théorie
+                acquise au fil de mes études.</p>
+              <p>La plus importante étant pour moi l'écoute des attentes du client, vient ensuite la partie tout aussi
+                intéressante, celle de la réponse la plus adéquate vis-à-vis de cette demande.</p>
+              <p>C'est elle qui d'après moi, fait une bonne fidélisation de la clientèle grâce à un rapport d'écoute
+                active/réponse adéquate, et un client satisfait est un client qui revient.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SIXIEME ETAPE - LES FORMATIONS -->
+  <!-- <section id="formation" class="container mt-5">
+    <h3 class="text-center">Formations</h3>
+    <div class="table-responsive">
+      <table class="table table-striped table-sm table-light table-hover">
+        <thead>
+          <tr>
+            <th>Nom de la formation</th>
+            <th>Année</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Concepteur Developpeur d'Application</td>
+            <td>2021</td>
+            <td>
+              <p class="text-muted">Décembre 2020 - Août 2021</p>
+              <p>Durant cette formation à équivalence bac+4 j'ai pu consolider mes bases dans les langages de
+                programmation basique (HTML, CSS, Javascript, PHP, SQL, etc...) tout en apprenant une nouvelle façon de
+                voir le développement web, je parle notamment de la conception.</p>
+              <p>La partie la plus importante selon moi, car elle fera en sorte qu'un site ou une application fonctionne
+                sur le long terme et soit le plus optimisé possible.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>Développeur Web et Web Mobile</td>
+            <td>2020</td>
+            <td>
+              <p class="text-muted">Février 2019 - Novembre 2020</p>
+              <p>Durant cette formation à équivalence bac+2 j'ai découvert le monde de la programmation et plus
+                particulièrement celui du web.</p>
+              <p>Cette formation m'a permis de me familiariser avec ces langages tout en réalisant des projets simples.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>BTS Management des Unités Commerciales</td>
+            <td>2013</td>
+            <td>
+              <p class="text-muted">Septembre 2011 - Août 2013</p>
+              <p>Au cours de ma scolarité j'ai étudié les techniques et les compétences à developper pour être d'une
+                part un bon commercial mais aussi, un bon chef d'équipe.</p>
+              <p>Le BTS MUC nous enseigne comment gérer une surface de vente avec tout ce qui la compose, c'est-à-dire
+                la lecture des tableaux et des chiffres-clé.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>BAC Science et Technologie de la Gestion</td>
+            <td>2008</td>
+            <td>
+              <p class="text-muted">Septembre 2008 - Août 2011</p>
+              <p>Cette formation était le commencement de ma carrière de vendeur.</p>
+              <p>J'y ai appris des techniques essentielles telle que la pyramide de MASLOW, les acteurs de la vie
+                économique, les différents types d'entreprises. Gérer les factures et l'approvisionnement.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section> -->
+
+  <section id="formation" class="container mt-5">
+    <h3 class="text-center">Formations</h3>
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        <tbody>
+          <tr class="text-end">
+            <td>Concepteur Développeur d'Application
+              <p class="text-muted">Décembre 2020 - Août 2021</p>
+            </td><td>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              Développeur Web et Web Mobile
+              <p class="text-muted">Février 2019 - Novembre 2020</p>
+            </td>
+          </tr>
+          <tr class="text-end">
+            <td>BTS Management des Unités Commerciales
+              <p class="text-muted">Septembre 2011 - Août 2013</p>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>BAC Science et Technologie de la Gestion
+              <p class="text-muted">Septembre 2008 - Août 2011</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SEPTIEME ETAPE - CONTACT -->
+  <footer id="contact" class="mt-5 p-4 bg-dark text-white text-center h4">
+    <div class="row">
+      <div class="col-md-3" data-bs-toggle="modal" data-bs-target="#telephoneModal"
+        class="btn w-100 btn-outline-secondary">Téléphone <i class="fas fa-phone"></i></div>
+      <div class="col-md-3" data-bs-toggle="modal" data-bs-target="#emailModal" class="btn w-100 btn-outline-secondary">
+        email <i class="fas fa-at"></i></div>
+      <div class="col-md-3" data-bs-toggle="modal" data-bs-target="#githubModal"
+        class="btn w-100 btn-outline-secondary">Github <i class="fab fa-github"></i></div>
+      <div class="col-md-3" data-bs-toggle="modal" data-bs-target="#linkedinModal"
+        class="btn w-100 btn-outline-secondary">Linkedin <i class="fab fa-linkedin"></i></div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <!-- TELEPHONE -->
+  <div id="telephoneModal" class="modal fade" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Mon numéro de téléphone</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+            <span class="visually-hidden">Fermer</span>
+          </button> <!-- Le bouton pour fermer la fenêtre modale -->
+        </div>
+        <div class="modal-body">
+          <p class="card-text lead text-center">06 66 99 86 60</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- EMAIL -->
+  <div id="emailModal" class="modal fade" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Mon adresse email</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+            <span class="visually-hidden">Fermer</span>
+          </button> <!-- Le bouton pour fermer la fenêtre modale -->
+        </div>
+        <div class="modal-body">
+          <p class="card-text lead text-center user-select-all">kequintin@laposte.net</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GITHUB -->
+  <div id="githubModal" class="modal fade" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Mes projets Github</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+            <span class="visually-hidden">Fermer</span>
+          </button> <!-- Le bouton pour fermer la fenêtre modale -->
+        </div>
+        <div class="modal-body">
+          <p class="card-text lead text-center user-select-all">https://github.com/Kevin-quintin?tab=repositories</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Linkedin -->
+  <div id="linkedinModal" class="modal fade" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Mon profil Linkedin</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+            <span class="visually-hidden">Fermer</span>
+          </button> <!-- Le bouton pour fermer la fenêtre modale -->
+        </div>
+        <div class="modal-body">
+          <p class="card-text lead text-center user-select-all">https://www.linkedin.com/in/kevin-quintin-5b007720a/</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+  <script src="./src/script.js"></script>
+</body>
+
+</html>
