@@ -192,12 +192,25 @@ document.getElementById('deviner').addEventListener('click', (e) => {
 // ----------------------------------------------------------- MODE SOMBRE ---------------------------------------------------------- //
 let btn_switch = document.getElementById("mode_sombre_pour_switch");
 let message = document.getElementById("message");
+let titre = document.querySelectorAll('h3');
+let carte = document.querySelectorAll('.card');
+
 
 btn_switch.addEventListener('click', verifierMode)
 
 function appelerModeSombre(){
   document.querySelector('body').className = 'dark';  
   message.textContent = "Mode sombre";
+  // document.getElementById('experienceProfessionnel').className = 'titreBlanc';
+  for (let i = 0; i < titre.length; i++) {
+    titre[i].style.color = '#D8D8D8';    
+  }
+  for (let j = 0; j < carte.length; j++) {
+    carte[j].className = 'card bg-dark text-white';
+  }
+  document.getElementById('phrase').style.color = "#000000";
+  document.getElementById('auteur').style.color = "#000000";
+  document.getElementById('textFormation').style.color = '#D8D8D8';
   localStorage.setItem('modeSombre', true)
 }
 
@@ -210,6 +223,14 @@ function verifierMode(){
     // On l'enlève
     document.querySelector('body').className = 'bg-light';
     message.textContent = "Mode clair";
+    for (let j = 0; j < titre.length; j++) {
+      titre[j].style.color = '#000000';    
+    }
+    document.getElementById('titreProjet').style.color = "#ffffff";
+    document.getElementById('textFormation').style.color = '#000000';
+    for (let h = 0; h < carte.length; h++) {
+      carte[h].className = 'card';
+    }
     localStorage.clear();
   }
 }
@@ -217,8 +238,9 @@ function verifierMode(){
 if (localStorage.getItem('modeSombre')) {
   // SI la variable est stocké je fais ceci
   appelerModeSombre();
+  btn_switch.checked = true;
 } else {
-  // Sinon je fais ceci
+  message.textContent = "Mode clair";
 }
 
 // ----------------------------------------------------------- FIGHT SIMULATOR ---------------------------------------------------------- //
