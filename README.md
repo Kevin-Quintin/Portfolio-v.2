@@ -23,3 +23,5 @@ Mais il contient en plus, des projets javascript:
 Toutes ces applications et encore plus ont été réalisé grâce au cours de Louis-Nicolas sur la plateforme Udemy.
 
 Je vous souhaite une bonne lecture.
+
+![photo_illustration](https://user-images.githubusercontent.com/61229701/140501701-2bb14253-d1ba-4040-87f3-5a162e733e95.jpg)
