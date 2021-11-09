@@ -1,3 +1,43 @@
+/* ---------------------------------------------- EFFET MACHINE A ECRIRE ------------------------------------- */
+h1 {
+  font-family: Open sans;
+  color: #141313;
+  display: inline-block;
+  position: relative;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 3px;
+  background: #dadada;
+  right: -15px;
+  top: 0;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* ---------------------------------------------- PHOTO ------------------------------------------------------ */
+#profil {
+  width: 225px;
+  height: 300px;
+  border-radius: 25%;
+  box-shadow: 8px 5px 3px rgba(0, 0, 0, 0.50);
+  margin: 2em;
+}
+
 /* ---------------------------------------------- LE JUSTE PRIX ---------------------------------------------- */
 #instructions {
   color: white;

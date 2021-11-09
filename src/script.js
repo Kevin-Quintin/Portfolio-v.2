@@ -4,6 +4,23 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
+// ----------------------------------------------------------- EFFET MACHINE A ECRIRE ------------------------------------------------ //
+const title = document.querySelector("h1");
+const txt = "Kevin Quintin";
+
+function typewriter(word, index) {
+  if (index < word.length) {
+    setTimeout(() => {
+      title.innerHTML += `<span>${word[index]}</span>`;
+      typewriter(txt, index + 1);
+    }, 300);
+  }
+}
+setTimeout(() => {
+  typewriter(txt, 0);
+}, 500);
+
+
 // ----------------------------------------------------------- CALCULATRICE ---------------------------------------------------------- //
 let btnCalcultrice = document.getElementById("calculette");
 btnCalcultrice.addEventListener("click", calculatrice);
